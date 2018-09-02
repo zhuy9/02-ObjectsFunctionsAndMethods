@@ -25,7 +25,7 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 #    Finish by RUNNING the corrected program
 #    and making sure that it RUNS CORRECTLY.
 #      That is, make sure that (per the doc-strings) the program
-#      prints some calculated values and makes a Turtle do some things.
+#      prints two calculated values and makes a SimpleTurtle do some things.
 #
 #   When finished, COMMIT-and-PUSH your work, as always.
 #
