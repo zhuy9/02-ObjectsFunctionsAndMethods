@@ -4,7 +4,7 @@ This module uses ROSEGRAPHICS to demonstrate:
   -- applying METHODS to them, and
   -- accessing their DATA via INSTANCE VARIABLES.
 
-Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
+Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
          their colleagues and PUT_YOUR_NAME_HERE.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 

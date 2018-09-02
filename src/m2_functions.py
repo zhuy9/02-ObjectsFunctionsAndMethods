@@ -2,7 +2,7 @@
 Practice DEFINING and CALLING
      FUNCTIONS
 
-Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
+Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
          their colleagues and PUT_YOUR_NAME_HERE.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
@@ -41,7 +41,7 @@ def main():
 
 def turtle1():
     """
-    Constructs a square SimpleTurtle.
+    Constructs a square-shaped SimpleTurtle.
     Makes that SimpleTurtle draw a yellow-filled circle.
     """
     ada = rg.SimpleTurtle('square')
@@ -57,7 +57,7 @@ def turtle1():
 
 def turtle2():
     """
-    Constructs a triangle SimpleTurtle.
+    Constructs a triangle-shaped SimpleTurtle.
     Makes that SimpleTurtle go to a RANDOM point,
     draws a cool shape, and return to where it started from.
     """

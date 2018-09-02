@@ -4,7 +4,7 @@ This module lets you practice  ** using objects **, including:
   -- applying METHODS to them, and
   -- accessing their DATA via INSTANCE VARIABLES
 
-Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
+Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
          their colleagues and PUT_YOUR_NAME_HERE.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
@@ -15,6 +15,7 @@ def main():
     """ Calls the other functions to demonstrate and/or test them. """
     # Test your functions by putting calls to them here:
 
+rg.SimpleTurtle().
 
 def two_circles():
     """
