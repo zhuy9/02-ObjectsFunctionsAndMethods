@@ -1736,6 +1736,9 @@ class TurtleWindow(object):
     def tracer(self, n=None, delay=None):
         self._screen.tracer(n, delay)
 
+    def update(self):
+        self._screen.update()
+
 
 class ShapesWindow(RoseWindow):
     pass

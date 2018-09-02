@@ -9,14 +9,20 @@ import rosegraphics as rg
 
 def main():
     """ Calls the   TEST   functions in this module. """
-    run_test_draw_circles()
-    # Un-comment the next lines when you are ready to use them.
+    drawing_speed = 10  # Bigger numbers mean faster drawing
+    window = rg.TurtleWindow()
+    window.tracer(drawing_speed)
+
+    # Un-comment the relevant line below, depending on what you are testing:
+    # run_test_draw_circles()
     # run_test_better_draw_circles()
     # run_test_even_better_draw_circles()
 
+    window.close_on_mouse_click()
+
 
 # ----------------------------------------------------------------------
-# READ THIS:
+#  READ THIS:
 #  The next two functions:
 #       draw_circles    run_test_draw_circles
 #  are both complete.  Do NOT change them.
@@ -41,25 +47,37 @@ def run_test_draw_circles():
 
 def draw_circles():
     """
-    -- Constructs a window whose width and height are both 400.
-    -- Constructs and draws 21 rg.Circle objects such that:
+    Constructs a TurtleWindow and SimpleTurtle, then uses the SimpleTurtle
+    to draw 21 circles such that:
          -- Each is centered at (200, 200)
          -- They have radii:  0  10  20  30  40 ... 200, respectively.
-         -- Pauses 0.05 seconds after rendering each.
-    -- Waits for the user to press the mouse, then closes the window.
+    Then waits for the user to press the mouse, then closes the window.
     """
     # ------------------------------------------------------------------
     # Students:
     #   Do NOT touch this function - it has no TO DO in it.
     # ------------------------------------------------------------------
-    window = rg.RoseWindow(400, 400)
 
-    center = rg.Point(200, 200)
-    for k in range(21):
-        circle = rg.Circle(center, 10 * k)
-        circle.attach_to(window)
-        window.render(0.05)  # Pauses for 0.05 seconds after rendering.
 
+    turtle = rg.SimpleTurtle()
+    turtle.setheading(0)  # Point "east" (towards the right)
+
+
+    center = rg.Point(0, 0)
+
+    # Draw circles centered at (0, 0) by repeatedly:
+    #
+    #   With the pen up, move UP
+    for k in range(1, 11):  # k becomes 1, 2, 3, ... 10
+        r = 15 * k  # Radius of circle this time in the loop: 15, 30, 45, ...
+        starting_point = rg.Point(center.x, center.y - r)
+
+        turtle.pen_up()
+        turtle.go_to(starting_point)
+        turtle.pen_down()
+        turtle.draw_circle(r)
+
+    window.update()
     window.close_on_mouse_click()
 
 # ----------------------------------------------------------------------
