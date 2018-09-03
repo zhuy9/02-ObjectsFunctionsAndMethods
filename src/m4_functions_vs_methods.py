@@ -4,7 +4,7 @@ Demonstrates using (calling) FUNCTIONS and using (calling) METHODS:
   -- how they differ.
 
 Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
-         their colleagues and Vibha Alangar & YUCHEN ZHU.
+         their colleagues and  YUCHEN ZHU.
 """  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
@@ -81,13 +81,14 @@ def main():
     turtle = rg.SimpleTurtle('square')
     draw_many_squares(turtle, 3, 75, 15)
 
-    turtle3()
+    turtle3("green", 10)
 
     ###########################################################################
     # When the TODOs ask you to test YOUR code, put YOUR tests below this:
     ###########################################################################
     print(try_methods())
     print(try_functions())
+    print(try_methods_and_functions())
     window.close_on_mouse_click()  # Your code must be ABOVE this statement
 
 
@@ -257,16 +258,37 @@ def try_methods_and_functions():
     #   function defined above.  If you don't see why, ** ASK FOR HELP. **
     #
     ###########################################################################
-
     charlie = rg.SimpleTurtle("turtle")
     charlie.pen = rg.Pen("blue", 5)
+    # 1
     charlie.backward(150)
+    # 2
     charlie.speed = 1
     for i in range(2):
         charlie.left(30)
         charlie.draw_square(100)
+    # 3
+    charlie.speed = 5
+    charlie.pen.color = "red"
+    for j in range(10):
+        charlie.left(15)
+        charlie.draw_square(50)
+    # 4
+    charlie.speed = 100
+    charlie.pen.thickness = 35
+    for k in range(8):
+        charlie.left(60)
+        charlie.draw_square(300)
+    # 5
+    charlie.pen = rg.Pen("black", 3)
+    # 6
+    charlie.backward(200)
+    # 7
+    charlie.draw_circle(30)
+    # 8
+    charlie.draw_square(50)
 
-    charlie
+
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # -----------------------------------------------------------------------------
