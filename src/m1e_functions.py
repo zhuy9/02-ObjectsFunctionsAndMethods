@@ -8,27 +8,26 @@
 
 
 def main():
-    hello()
-    goodbye()
-    hello()
-    hello()
-
-    hello_and_goodbye()
-
-
-def hello():
-    print('Hello!  How are things?')
+    hello("Snow White")
+    goodbye("Bashful")
+    hello("Grumpy")
+    hello("Sleepy")
+    hello_and_goodbye("Magic Micror", "Cruel Queen")
 
 
-def goodbye():
-    print('Goodbye!')
+def hello(friend):
+    print("Hello," + friend + "!  How are things?")
+
+
+def goodbye(friend):
+    print("Goodbye," + friend + "!")
     print('   Ciao!')
     print('   Bai bai!')
 
 
-def hello_and_goodbye():
-    hello()
-    goodbye()
+def hello_and_goodbye(person1, person2):
+    hello(person1)
+    goodbye(person2)
 
 
 main()
