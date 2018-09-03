@@ -1867,6 +1867,10 @@ class SimpleTurtle(object):
         self._update_real_turtle()
         self._turtle.goto(point.x, point.y)
 
+    def set_heading(self, to_angle):
+        self._update_real_turtle()
+        self._turtle.setheading(to_angle)
+
     def draw_circle(self, radius):
         """
         Makes this SimpleTurtle draw a circle with the given radius.
