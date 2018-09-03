@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# Read the code below. Trace (by hand) the execution of the code,
+# TODO:  READ the code below. TRACE (by hand) the execution of the code,
 # predicting what will get printed.  Then run the code
 # and compare your prediction to what actually was printed.
 #
