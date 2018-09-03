@@ -4,12 +4,12 @@ Demonstrates using (calling) FUNCTIONS and using (calling) METHODS:
   -- how they differ.
 
 Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
-         their colleagues and Vibha Alangar.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Vibha Alangar & YUCHEN ZHU.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   READ this comment, ASKING QUESTIONS as needed to understand it.
 #
 # Part 1:  CONSTRUCTING objects, applying ** METHODS ** to them:
@@ -86,7 +86,8 @@ def main():
     ###########################################################################
     # When the TODOs ask you to test YOUR code, put YOUR tests below this:
     ###########################################################################
-
+    print(try_methods())
+    print(try_functions())
     window.close_on_mouse_click()  # Your code must be ABOVE this statement
 
 
@@ -181,9 +182,15 @@ def try_methods():
       -- backward  100 units
     """
     ###########################################################################
-    # TODO: 3. Implement and test this function, per its doc-string above.
+    # DONE: 3. Implement and test this function, per its doc-string above.
     #     (To test it, put a statement in   main   that calls this function.)
     ###########################################################################
+    alpha = rg.SimpleTurtle("turtle")
+    alpha.pen = rg.Pen("brown", 5)
+    alpha.forward(150)
+    alpha.left(90)
+    alpha.forward(50)
+    alpha.backward(100)
 
 
 def try_functions():
@@ -204,7 +211,9 @@ def try_functions():
     #    HINT: see   jump_and_move_turtle   above.
     #
     ###########################################################################
-
+    jump_and_move_turtle(200,100,300,20)
+    jump_and_move_turtle(100,200,0,0)
+    jump_and_move_turtle(-50,50,100,100)
 
 def try_methods_and_functions():
     # IMPORTANT: Read the NOTE below before you try to solve this TO-DO!
@@ -249,7 +258,15 @@ def try_methods_and_functions():
     #
     ###########################################################################
 
+    charlie = rg.SimpleTurtle("turtle")
+    charlie.pen = rg.Pen("blue", 5)
+    charlie.backward(150)
+    charlie.speed = 1
+    for i in range(2):
+        charlie.left(30)
+        charlie.draw_square(100)
 
+    charlie
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # -----------------------------------------------------------------------------
