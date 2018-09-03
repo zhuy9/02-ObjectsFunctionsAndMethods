@@ -3,7 +3,7 @@ Demonstrates using (calling) FUNCTIONS and using (calling) METHODS:
   -- what is similar, and
   -- how they differ.
 
-Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
+Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
          their colleagues and Vibha Alangar.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
@@ -148,17 +148,17 @@ def draw_many_squares(my_turtle, number_of_squares, size, twist):
     my_turtle.speed = old_speed
 
 
-def turtle3():
+def turtle3(color, thickness):
     """
     Constructs a classic SimpleTurtle and asks it to draw a
-      "ball on pole" shape.
+      "ball on pole" shape, using a Pen with the give color and thickness.
     """
     # -------------------------------------------------------------------------
     # Students:
     #   Do NOT touch this function - it has no TO-DO in it.
     # -------------------------------------------------------------------------
     maja = rg.SimpleTurtle()
-    maja.pen = rg.Pen('green', 10)
+    maja.pen = rg.Pen(color, thickness)
     maja.paint_bucket = rg.PaintBucket('black')
     maja.speed = 15
 
